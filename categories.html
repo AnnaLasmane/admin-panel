@@ -229,8 +229,15 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js "></script>
     <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable();
+        $(document).ready(function () {
+            $('#myTable').dataTable({
+                "columns": [
+                    { "orderable": true },
+                    { "orderable": true },
+                    { "orderable": true },
+                    { "orderable": false },
+                ]
+            });
         });
     </script>
 </body>
