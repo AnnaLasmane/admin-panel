@@ -38,3 +38,9 @@
 .logo {
     width: 200px;
 }
+
+/* Sidebar */
+
+.sidebar-bg {
+    background-color: rgba(16, 133, 16, 0.11)
+}

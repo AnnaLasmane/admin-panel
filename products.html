@@ -18,7 +18,7 @@
 <body class="bg-light">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-2 p-0" style="min-width: 180px;">
+            <div class="col-2 p-0 sidebar-bg" style="min-width: 180px;">
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="categories" viewBox="0 0 16 16">
@@ -36,7 +36,7 @@
                 </svg>
 
                 <!-- Sidebar -->
-                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light">
+                <div class="d-flex flex-column flex-shrink-0 p-3">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <span class="fs-4">LOGO</span>
@@ -44,7 +44,7 @@
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li>
-                            <a href="categories.html" class="nav-link link-dark">
+                            <a href="./categories.html" class="nav-link link-dark">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#categories" />
                                 </svg>
@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="products.html" class="nav-link link-dark">
+                            <a href="#" class="nav-link link-dark active">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#grid" />
                                 </svg>
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link link-dark active" aria-current="page">
+                            <a href="./orders.html" class="nav-link link-dark" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#table" />
                                 </svg>
@@ -74,11 +74,6 @@
             <!-- Search -->
             <div class="col-10 py-5 px-4">
                 <form class="row g-3 d-flex justify-content-end">
-                    <div class="col-auto">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                            aria-describedby="search-addon" />
-
-                    </div>
                     <div class="col-auto">
                         <button type="submit" class="btn btn-success mb-3">Create product</button>
                     </div>
