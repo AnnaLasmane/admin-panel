@@ -14,9 +14,9 @@
 <body>
 
     <!-- Main container -->
-    <div class="conatainer">
+    <div class="conatainer-fluid">
         <div class="row">
-            <div class="col-4">
+            <div class="col-3 p-0">
 
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -70,100 +70,109 @@
                 </div>
             </div>
 
-            <div class="col-8">
+            <!-- Main content -->
+            <div class="col-9 align-middle">
 
-                <!-- Main content -->
-                <section class="ftco-section">
-
-                    <!-- Search -->
-                    <div class="container mt-5">
-                        <form class="row g-3 d-flex justify-content-end">
-                            <div class="col-auto">
-                                <input type="search" class="form-control rounded" placeholder="Search"
-                                    aria-label="Search" aria-describedby="search-addon">
-                            </div>
-                        </form>
-
-                        <!-- Table -->
-                        <div class="row ml-12">
-                            <div class="col-md-12">
-                                <div class="table-wrap">
-                                    <table class="table">
-                                        <thead class="thead-primary">
-                                            <tr>
-                                                <th>ID</th>
-                                                <th>Customer</th>
-                                                <th>Products</th>
-                                                <th>Price</th>
-                                                <th>Vat</th>
-                                                <th>Total</th>
-                                                <th>Status</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" class="scope">1</th>
-                                                <td>Jake Knight</td>
-                                                <td>10</td>
-                                                <td>10.00 EUR</td>
-                                                <td>2.10 EUR</td>
-                                                <td>12.10 EUR</td>
-                                                <span class="badge badge-warning">Pending</span>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                                <td><a href="#" class="btn btn-primary">Delete</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="scope">2</th>
-                                                <td>Beatrice Caldwell</td>
-                                                <td>11</td>
-                                                <td>11.00 EUR</td>
-                                                <td>2.31 EUR</td>
-                                                <td>13.31 EUR</td>
-                                                <span class="badge badge-pill badge-success">Completed</span>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                                <td><a href="#" class="btn btn-primary">Delete</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="scope">3</th>
-                                                <td>Hubert Curry</td>
-                                                <td>13</td>
-                                                <td>13.00 EUR</td>
-                                                <td>2.73 EUR</td>
-                                                <td>15.73 EUR</td>
-                                                <span class="badge badge-pill badge-danger">Danger</span>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                                <td><a href="#" class="btn btn-primary">Delete</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="scope">4</th>
-                                                <td>Ruth Clarke</td>
-                                                <td>16</td>
-                                                <td>16.00 EUR</td>
-                                                <td>3.36 EUR</td>
-                                                <td>19.36 EUR</td>
-                                                <span class="badge badge-warning">Pending</span>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                                <td><a href="#" class="btn btn-primary">Delete</a></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" class="scope">5</th>
-                                                <td>Anthony Reynolds</td>
-                                                <td>20</td>
-                                                <td>20.00 EUR</td>
-                                                <td>4.20 EUR</td>
-                                                <td>24.20 EUR</td>
-                                                <span class="badge badge-warning">Pending</span>
-                                                <td><a href="#" class="btn btn-primary">Edit</a></td>
-                                                <td><a href="#" class="btn btn-primary">Delete</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Search -->
+                <form class="row g-3 d-flex justify-content-end">
+                    <div class="col-auto">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon">
                     </div>
-                </section>
+                </form>
+
+                <!-- Table -->
+                <table class="table align-middle">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Customer</th>
+                            <th scope="col">Products</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Vat</th>
+                            <th scope="col">Total</th>
+                            <th scope="col">Status</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="scope">1</th>
+                            <td>Jake Knight</td>
+                            <td>10</td>
+                            <td>10.00 EUR</td>
+                            <td>2.10 EUR</td>
+                            <td>12.10 EUR</td>
+                            <span class="badge badge-warning">Pending</span>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="scope">2</th>
+                            <td>Beatrice Caldwell</td>
+                            <td>11</td>
+                            <td>11.00 EUR</td>
+                            <td>2.31 EUR</td>
+                            <td>13.31 EUR</td>
+                            <span class="badge badge-pill badge-success">Completed</span>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="scope">3</th>
+                            <td>Hubert Curry</td>
+                            <td>13</td>
+                            <td>13.00 EUR</td>
+                            <td>2.73 EUR</td>
+                            <td>15.73 EUR</td>
+                            <span class="badge badge-pill badge-danger">Danger</span>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="scope">4</th>
+                            <td>Ruth Clarke</td>
+                            <td>16</td>
+                            <td>16.00 EUR</td>
+                            <td>3.36 EUR</td>
+                            <td>19.36 EUR</td>
+                            <span class="badge badge-warning">Pending</span>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="scope">5</th>
+                            <td>Anthony Reynolds</td>
+                            <td>20</td>
+                            <td>20.00 EUR</td>
+                            <td>4.20 EUR</td>
+                            <td>24.20 EUR</td>
+                            <span class="badge badge-warning">Pending</span>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
