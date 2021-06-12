@@ -4,3 +4,20 @@
 .nav-link:hover {
     opacity: 0.5;
 }
+
+/* Pagination */
+
+.pagination > li > a {
+    padding: 6px 12px;
+    margin: 0 3px;
+    color: inherit;
+}
+.pagination > li > a:hover {
+    color: black;
+    background-color: lightgray;
+}
+.same-page {
+    color: black !important;
+    background-color: lightgray !important;
+    border-color: dimgray !important;
+}
