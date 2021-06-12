@@ -1,23 +1,55 @@
 .active {
     background-color: gray !important;
 }
+
 .nav-link:hover {
     opacity: 0.5;
 }
 
+
 /* Pagination */
 
-.pagination > li > a {
+.pagination>li>a {
     padding: 6px 12px;
     margin: 0 3px;
     color: inherit;
 }
-.pagination > li > a:hover {
+
+.pagination>li>a:hover {
     color: black;
     background-color: lightgray;
 }
+
 .same-page {
     color: black !important;
     background-color: lightgray !important;
     border-color: dimgray !important;
+}
+
+
+/* footer */
+
+footer {
+    color: #28a745;
+    ;
+}
+
+
+/* forms */
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+.mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
