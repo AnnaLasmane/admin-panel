@@ -1,5 +1,5 @@
 .active {
-    background-color: gray !important;
+    background-color: rgb(16, 133, 16)!important;
 }
 
 .nav-link:hover {
@@ -23,14 +23,6 @@
 .same-page {
     background-color: gray !important;
     border-color: dimgray !important;
-}
-
-
-/* footer */
-
-footer {
-    color: #28a745;
-    ;
 }
 
 
