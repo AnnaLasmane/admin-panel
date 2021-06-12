@@ -6,6 +6,23 @@
     opacity: 0.5;
 }
 
+/* Buttons */
+
+.btn-success {
+    background-color: rgb(9, 155, 9)!important;
+    border-color: rgb(9, 155, 9)!important;
+}
+
+.btn-outline-success {
+    border-color: rgb(9, 155, 9)!important;
+    color: rgb(9, 155, 9)!important;
+}
+
+.btn-outline-success:hover {
+    background-color: rgb(9, 155, 9)!important;
+    color: rgb(255, 255, 255)!important;
+}
+
 /* Background */
 
 body {
