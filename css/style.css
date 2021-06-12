@@ -46,9 +46,3 @@ footer {
 .logo {
     width: 200px;
 }
-
-.mainpage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
