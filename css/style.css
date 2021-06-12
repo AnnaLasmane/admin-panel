@@ -6,6 +6,21 @@
     opacity: 0.5;
 }
 
+/* Background */
+
+body {
+    background-image: url("../images/meadow.jpg");
+    height: 100%;
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-tranparent {
+    background-color: rgba(255, 255, 255, 0.521)
+}
 
 /* Pagination */
 
@@ -24,7 +39,6 @@
     background-color: gray !important;
     border-color: dimgray !important;
 }
-
 
 /* forms */
 
