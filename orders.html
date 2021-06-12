@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orders</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-
-    <!-- Main container -->
-    <div class="conatainer-fluid bg-light">
+<body class="bg-light">
+    <div class="conatainer-fluid">
         <div class="row">
-            <div class="col-2 p-0">
+            <div class="col-2 p-0 sidebar-bg" style="min-width: 180px;">
 
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -34,31 +34,34 @@
                 </svg>
 
                 <!-- Sidebar -->
-                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light">
-                    <a class="navbar-brand" href="index.html">
+                <div class="d-flex flex-column flex-shrink-0 p-3">
+                    <a class="navbar-brand ms-1" href="index.html">
                         <img src="./images/small-logo.jpeg" width="50" alt="Midsummer Essentials Logo">
                     </a>
                     <hr>
                     <ul class="nav nav-pills flex-column mb-auto">
                         <li>
-                            <a href="categories.html" class="nav-link link-dark">
+                            <a href="./categories.html" class="nav-link link-dark">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#categories" />
-                                </svg> Categories
+                                </svg>
+                                Categories
                             </a>
                         </li>
                         <li>
-                            <a href="products.html" class="nav-link link-dark">
+                            <a href="./products.html" class="nav-link link-dark">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#grid" />
-                                </svg> Products
+                                </svg>
+                                Products
                             </a>
                         </li>
                         <li>
                             <a href="#" class="nav-link link-dark active" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
                                     <use xlink:href="#table" />
-                                </svg> Orders
+                                </svg>
+                                Orders
                             </a>
                         </li>
                     </ul>
@@ -66,151 +69,136 @@
             </div>
 
             <!-- Main content -->
-            <div class="col-10 align-middle">
+            <div class="col-10 py-5 px-4">
 
                 <!-- Search -->
                 <form class="row g-3 d-flex justify-content-end">
                     <div class="col-auto">
-                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon">
+                        <button type="submit" class="btn btn-success mb-3">Create order manually</button>
                     </div>
                 </form>
 
                 <!-- Table -->
-                <table class="table align-middle">
-                    <thead class="thead-primary">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Customer</th>
-                            <th scope="col">Products</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Vat</th>
-                            <th scope="col">Total</th>
-                            <th scope="col">Status</th>
-                            <th scope="col"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="scope">1</th>
-                            <td>
-                                <div><strong>Aina Aizsila</strong></div>
-                                <div>Atmodas street 56, Aizpute, LV-3456, Latvia</div>
-                            </td>
-                            <td>10</td>
-                            <td>10.00 EUR</td>
-                            <td>2.10 EUR</td>
-                            <td>12.10 EUR</td>
-                            <td>
-                                <span class="badge bg-warning">Pending</span>
-                            </td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="scope">2</th>
-                            <td>
-                                <div><strong>Baiba Bite</strong></div>
-                                <div>Birzes street 25, Baldone, LV-2125, Latvia</div>
-                            </td>
-                            <td>11</td>
-                            <td>11.00 EUR</td>
-                            <td>2.31 EUR</td>
-                            <td>13.31 EUR</td>
-                            <td>
-                                <span class="badge bg-success">Completed</span>
-                            </td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="scope">3</th>
-                            <td>
-                                <div><strong>Dainis Dambis</strong></div>
-                                <div>Dunduru street 14, Daugavpils, LV-5414, Latvia</div>
-                            </td>
-                            <td>13</td>
-                            <td>13.00 EUR</td>
-                            <td>2.73 EUR</td>
-                            <td>15.73 EUR</td>
-                            <td>
-                                <span class="badge bg-danger">Canceled</span>
-                            </td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="scope">4</th>
-                            <td>
-                                <div><strong>Kristaps Kokle</strong></div>
-                                <div>Krasta street 13, Koknese, LV-5113, Latvia</div>
-                            </td>
-                            <td>16</td>
-                            <td>16.00 EUR</td>
-                            <td>3.36 EUR</td>
-                            <td>19.36 EUR</td>
-                            <td>
-                                <span class="badge bg-warning">Pending</span>
-                            </td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row" class="scope">5</th>
-                            <td>
-                                <div><strong>Maija Magone</strong></div>
-                                <div>Mednieku street 1, Madona, LV-4801, Latvia</div>
-                            </td>
-                            <td>20</td>
-                            <td>20.00 EUR</td>
-                            <td>4.20 EUR</td>
-                            <td>24.20 EUR</td>
-                            <td>
-                                <span class="badge bg-warning">Pending</span>
-                            </td>
-                            <td>
-                                <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                    <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!-- Pagination -->
-                <nav aria-label="page-navigation">
-                    <ul class="pagination pagination-sm justify-content-end me-3">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="orders.html" aria-label="Previous" tabindex="-1" aria-disabled="true">
-                                <span aria-hidden="true">&#60;</span>
-                            </a>
-                        </li>
-                        <li class="page-item active"><a class="page-link same-page" aria-current="page">1</a></li>
-                        <li class="page-item"><a class="page-link" href="orders.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="orders.html">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="orders.html" aria-label="Previous">
-                                <span aria-hidden="true">&#62;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="row d-flex justify-content-end">
+                    <div class="col">
+                        <table id="myTable" class="table align-middle">
+                            <thead class="text-center">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Customer</th>
+                                    <th scope="col">Products</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Vat</th>
+                                    <th scope="col">Total</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <td>
+                                        <div><strong>Aina Aizsila</strong></div>
+                                        <div>Atmodas street 56, Aizpute, LV-3456, Latvia</div>
+                                    </td>
+                                    <td>10</td>
+                                    <td>10.00 EUR</td>
+                                    <td>2.10 EUR</td>
+                                    <td>12.10 EUR</td>
+                                    <td>
+                                        <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>2</th>
+                                    <td>
+                                        <div><strong>Baiba Bite</strong></div>
+                                        <div>Birzes street 25, Baldone, LV-2125, Latvia</div>
+                                    </td>
+                                    <td>11</td>
+                                    <td>11.00 EUR</td>
+                                    <td>2.31 EUR</td>
+                                    <td>13.31 EUR</td>
+                                    <td>
+                                        <span class="badge bg-success">Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>3</th>
+                                    <td>
+                                        <div><strong>Dainis Dambis</strong></div>
+                                        <div>Dunduru street 14, Daugavpils, LV-5414, Latvia</div>
+                                    </td>
+                                    <td>13</td>
+                                    <td>13.00 EUR</td>
+                                    <td>2.73 EUR</td>
+                                    <td>15.73 EUR</td>
+                                    <td>
+                                        <span class="badge bg-danger">Canceled</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>4</th>
+                                    <td>
+                                        <div><strong>Kristaps Kokle</strong></div>
+                                        <div>Krasta street 13, Koknese, LV-5113, Latvia</div>
+                                    </td>
+                                    <td>16</td>
+                                    <td>16.00 EUR</td>
+                                    <td>3.36 EUR</td>
+                                    <td>19.36 EUR</td>
+                                    <td>
+                                        <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>5</th>
+                                    <td>
+                                        <div><strong>Maija Magone</strong></div>
+                                        <div>Mednieku street 1, Madona, LV-4801, Latvia</div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>20.00 EUR</td>
+                                    <td>4.20 EUR</td>
+                                    <td>24.20 EUR</td>
+                                    <td>
+                                        <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -223,7 +211,16 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js "></script>
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
 </body>
 
 </html>
