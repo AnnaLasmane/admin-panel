@@ -1,0 +1,6 @@
+.active {
+    background-color: gray !important;
+}
+.nav-link:hover {
+    opacity: 0.5;
+}
