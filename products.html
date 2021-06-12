@@ -16,7 +16,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3 p-0">
+            <div class="col-2 p-0" style="min-width: 180px;">
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="categories" viewBox="0 0 16 16">
@@ -34,7 +34,7 @@
                 </svg>
 
                 <!-- Sidebar -->
-                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                <div class="d-flex flex-column flex-shrink-0 p-3 bg-light">
                     <a href="/"
                         class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                         <span class="fs-4">LOGO</span>
@@ -70,133 +70,135 @@
             </div>
 
             <!-- Search -->
- 
-                    <form class="row g-3 d-flex justify-content-end ">
-                        <div class="col-auto">
-                            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                                aria-describedby="search-addon" />
+            <div class="col-10 py-5 px-4">
+                <form class="row g-3 d-flex justify-content-end">
+                    <div class="col-auto">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+                            aria-describedby="search-addon" />
 
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-secondary mb-3">Create product</button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-secondary mb-3">Create product</button>
+                    </div>
+                </form>
 
-            <!-- Table -->
-            <div class="row">
-                <div class="col-9 align-middle">
-                    <table class="table align-middle">
-                        <thead class="text-center">
-                            <tr>
-                                <th scope="col">Image</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">Title</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Discounted price</th>
-                                <th scope="col"></th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img style="width: 150px;"
-                                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.valmiermuiza.lv%2Fwp-content%2Fuploads%2F2019%2F05%2Fgadskartu-alus-jani-41-1200x800.jpg&f=1&nofb=1"
-                                        class="col-12 rounded-1" alt="Beer">
-                                </td>
-                                <td>1</td>
-                                <td>Beer</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eum corporis illo
-                                    illum,
-                                    eaque
-                                    reprehenderit dolorum.</td>
-                                <td>5.00&nbsp;EUR</td>
-                                <td>4.99&nbsp;EUR</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                        <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><img style="width: 150px;"
-                                        src="http://www.dzivei.lv/wp-content/uploads/2017/06/kimenu_siers-1024x732.jpg"
-                                        class="col-12 rounded-1" alt="Cumin Cheese"></th>
-                                <td>2</td>
-                                <td>Cumin Cheese</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam voluptatibus
-                                    labore
-                                    natus
-                                    facilis consectetur.</td>
-                                <td>5.00&nbsp;EUR</td>
-                                <td>4.99&nbsp;EUR</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                        <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><img style="width: 150px;"
-                                        src="https://puaro.lv/wp-content/uploads/2016/06/janu-tradicijas-13.jpg"
-                                        class="col-12 rounded-1" alt="Flower Crown"></th>
-                                <td>3</td>
-                                <td>Flower Crown</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
-                                    deleniti
-                                    itaque
-                                    soluta optio, culpa quam iste libero.</td>
-                                <td>5.00&nbsp;EUR</td>
-                                <td>4.99&nbsp;EUR</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                        <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><img style="width: 150px;"
-                                        src="https://images.wallpaperscraft.com/image/bonfire_logs_flame_179541_2560x1440.jpg"
-                                        class="col-12 rounded-1" alt="Bonfire Log"></th>
-                                <td>3</td>
-                                <td>Bonfire Logs</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
-                                    deleniti
-                                    itaque
-                                    soluta optio, culpa quam iste libero.</td>
-                                <td>5.00&nbsp;EUR</td>
-                                <td>4.99&nbsp;EUR</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                        <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><img style="width: 150px;"
-                                        src="https://vegan.lv/wp-content/uploads/2018/05/sojsliks.jpg"
-                                        class="col-12 rounded-1" alt="Soy Shashlik"></th>
-                                <td>3</td>
-                                <td>Soy Shashlik</td>
-                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
-                                    deleniti
-                                    itaque
-                                    soluta optio, culpa quam iste libero.</td>
-                                <td>5.00&nbsp;EUR</td>
-                                <td>4.99&nbsp;EUR</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic outlined example">
-                                        <button type="button" class="btn btn-outline-secondary">Edit</button>
-                                        <button type="button" class="btn btn-outline-secondary">Delete</button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Table -->
+                <div class="row d-flex justify-content-end">
+                    <div class="col">
+                        <table class="table align-middle">
+                            <thead class="text-center">
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Discounted price</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img style="width: 150px;"
+                                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.valmiermuiza.lv%2Fwp-content%2Fuploads%2F2019%2F05%2Fgadskartu-alus-jani-41-1200x800.jpg&f=1&nofb=1"
+                                            class="col-12 rounded-1" alt="Beer">
+                                    </td>
+                                    <td>1</td>
+                                    <td>Beer</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eum corporis
+                                        illo
+                                        illum,
+                                        eaque
+                                        reprehenderit dolorum.</td>
+                                    <td>5.00&nbsp;EUR</td>
+                                    <td>4.99&nbsp;EUR</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img style="width: 150px;"
+                                            src="http://www.dzivei.lv/wp-content/uploads/2017/06/kimenu_siers-1024x732.jpg"
+                                            class="col-12 rounded-1" alt="Cumin Cheese"></th>
+                                    <td>2</td>
+                                    <td>Cumin Cheese</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquam
+                                        voluptatibus
+                                        labore
+                                        natus
+                                        facilis consectetur.</td>
+                                    <td>5.00&nbsp;EUR</td>
+                                    <td>4.99&nbsp;EUR</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img style="width: 150px;"
+                                            src="https://puaro.lv/wp-content/uploads/2016/06/janu-tradicijas-13.jpg"
+                                            class="col-12 rounded-1" alt="Flower Crown"></th>
+                                    <td>3</td>
+                                    <td>Flower Crown</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
+                                        deleniti
+                                        itaque
+                                        soluta optio, culpa quam iste libero.</td>
+                                    <td>5.00&nbsp;EUR</td>
+                                    <td>4.99&nbsp;EUR</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img style="width: 150px;"
+                                            src="https://images.wallpaperscraft.com/image/bonfire_logs_flame_179541_2560x1440.jpg"
+                                            class="col-12 rounded-1" alt="Bonfire Log"></th>
+                                    <td>3</td>
+                                    <td>Bonfire Logs</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
+                                        deleniti
+                                        itaque
+                                        soluta optio, culpa quam iste libero.</td>
+                                    <td>5.00&nbsp;EUR</td>
+                                    <td>4.99&nbsp;EUR</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><img style="width: 150px;"
+                                            src="https://vegan.lv/wp-content/uploads/2018/05/sojsliks.jpg"
+                                            class="col-12 rounded-1" alt="Soy Shashlik"></th>
+                                    <td>3</td>
+                                    <td>Soy Shashlik</td>
+                                    <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati sed
+                                        deleniti
+                                        itaque
+                                        soluta optio, culpa quam iste libero.</td>
+                                    <td>5.00&nbsp;EUR</td>
+                                    <td>4.99&nbsp;EUR</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-outline-secondary">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div><!-- /Row -->
