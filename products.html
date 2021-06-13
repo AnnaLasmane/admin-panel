@@ -21,6 +21,7 @@
     <div class="container-fluid mb-5 pd-5">
         <div class="row">
             <div class="col-2 p-0 sidebar-bg" style="min-width: 180px;">
+
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="categories" viewBox="0 0 16 16">
@@ -47,7 +48,7 @@
                         <li>
                             <a href="./categories.html" class="nav-link link-dark">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#categories" />
+                                    <use xlink:href="#categories">
                                 </svg>
                                 Categories
                             </a>
@@ -55,7 +56,7 @@
                         <li>
                             <a href="#" class="nav-link link-dark active">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid" />
+                                    <use xlink:href="#grid">
                                 </svg>
                                 Products
                             </a>
@@ -63,7 +64,7 @@
                         <li>
                             <a href="./orders.html" class="nav-link link-dark" aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#table" />
+                                    <use xlink:href="#table">
                                 </svg>
                                 Orders
                             </a>
@@ -115,7 +116,8 @@
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn btn-outline-success">Edit</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                            <button type="button" class="btn btn-outline-success"
+                                                onclick="deleteRow(this)">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -135,7 +137,8 @@
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn btn-outline-success">Edit</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                            <button type="button" class="btn btn-outline-success"
+                                                onclick="deleteRow(this)">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -154,7 +157,8 @@
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn btn-outline-success">Edit</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                            <button type="button" class="btn btn-outline-success"
+                                                onclick="deleteRow(this)">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -173,7 +177,8 @@
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn btn-outline-success">Edit</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                            <button type="button" class="btn btn-outline-success"
+                                                onclick="deleteRow(this)">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -192,7 +197,8 @@
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
                                             <button type="button" class="btn btn-outline-success">Edit</button>
-                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                            <button type="button" class="btn btn-outline-success"
+                                                onclick="deleteRow(this)">Delete</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -215,8 +221,8 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
-    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#myTable').dataTable({

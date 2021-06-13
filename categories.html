@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product categories</title>
+    <title>Categories</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/small-logo.png">
 </head>
 
 <body>
-
     <div class="container-fluid mb-5 pd-5">
         <div class="row">
             <div class="col-2 p-0 sidebar-bg" style="min-width: 180px;">
+
                 <!-- Sidebar Icons -->
                 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
                     <symbol id="categories" viewBox="0 0 16 16">
@@ -42,35 +43,42 @@
                         <li>
                             <a href="#" class="nav-link link-dark active">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#categories" />
-                                </svg> Categories
+                                    <use xlink:href="#categories">
+                                </svg>
+                                Categories
                             </a>
                         </li>
                         <li>
                             <a href="products.html" class="nav-link link-dark">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#grid" />
-                                </svg> Products
+                                    <use xlink:href="#grid">
+                                </svg>
+                                Products
                             </a>
                         </li>
                         <li>
                             <a href="orders.html" class="nav-link link-dark " aria-current="page">
                                 <svg class="bi me-2" width="16" height="16">
-                                    <use xlink:href="#table" />
-                                </svg> Orders
+                                    <use xlink:href="#table">
+                                </svg>
+                                Orders
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <!-- main -->
+
+            <!-- Main -->
             <div class="col-10 py-5 px-4">
+
+                <!-- Create category -->
                 <form class="row d-flex justify-content-end">
                     <div class="col-auto">
-                        <button type="submit" class=" btn btn-success  mb-3">Create category</button>
+                        <button type="submit" class=" btn btn-success mb-3">Create category</button>
                     </div>
                 </form>
-                <!-- table -->
+
+                <!-- Table -->
                 <table id="myTable" class="table">
                     <thead class="text-center">
                         <tr>
@@ -78,140 +86,162 @@
                             <th scope="col">Title</th>
                             <th scope="col">Description</th>
                             <th scope="col"></th>
-
-
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1</td>
                             <td>Beer</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Traditional Cumin Cheese</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>Flower Crown</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.
                             </td>
-
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>4</td>
                             <td>Bonfire Logs</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>5</td>
                             <td>Soy Shashlik</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>6</td>
                             <td>Midsummer flowers</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group " aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>7</td>
                             <td>Garlic bread</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
 
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>8</td>
                             <td>Eco matches</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>9</td>
                             <td>Mosquito spray</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>10</td>
                             <td>Linen skirts</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group " aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
                         <tr>
                             <td>11</td>
                             <td>Weather forcast</td>
-                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur tempore vero facilis aliquam iusto saepe.</td>
-
+                            <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam est nemo hic possimus
+                                facilis. Ipsam deleniti, porro, earum laboriosam sed ratione atque nostrum, consequatur
+                                tempore vero facilis aliquam iusto saepe.</td>
                             <td>
-                                <div class="btn-group " role="group " aria-label="Basic outlined example ">
-                                    <button type="button " class="btn btn-outline-success ">Edit</button>
-                                    <button type="button " class="btn btn-outline-success " onclick="deleteRow(this)">Delete</button>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-success">Edit</button>
+                                    <button type="button" class="btn btn-outline-success"
+                                        onclick="deleteRow(this)">Delete</button>
                                 </div>
                             </td>
                         </tr>
@@ -220,14 +250,16 @@
             </div>
         </div>
     </div>
-    </div>
+
+    <!-- Footer -->
     <footer class="fixed-bottom bg-light border">
         <div class="p-2 ms-5 text-dark text-muted fw-lighter">
             <p>© 2021 Midsummer Essentials</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js "></script>
-    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#myTable').dataTable({
@@ -241,7 +273,6 @@
         });
     </script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>

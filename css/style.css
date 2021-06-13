@@ -1,3 +1,34 @@
+/* Background */
+
+body {
+    background-image: url("../images/grass.jpg");
+    height: 100%;
+    background-position-x: left;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Sign In form */
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+}
+
+/* Sidebar */
+
+.sidebar-bg {
+    background-color: rgba(16, 133, 16, 0.333)
+}
+
 .active {
     background-color: rgb(9, 155, 9)!important;
 }
@@ -21,55 +52,6 @@
 .btn-outline-success:hover {
     background-color: rgb(9, 155, 9)!important;
     color: rgb(255, 255, 255)!important;
-}
-
-/* Background */
-
-body {
-    background-image: url("../images/grass.jpg");
-    height: 100%;
-    background-position-x: left;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* Pagination */
-
-.pagination>li>a {
-    padding: 6px 12px;
-    margin: 0 3px;
-    color: inherit;
-}
-
-.pagination>li>a:hover {
-    color: black;
-    background-color: lightgray;
-}
-
-.same-page {
-    background-color: gray !important;
-    border-color: dimgray !important;
-}
-
-/* forms */
-
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-}
-
-.logo {
-    width: 200px;
-}
-
-/* Sidebar */
-
-.sidebar-bg {
-    background-color: rgba(16, 133, 16, 0.333)
 }
 
 /* Footer */
