@@ -69,15 +69,8 @@
                 </div>
             </div>
 
-            <!-- Main content -->
+            <!-- Main -->
             <div class="col-10 py-5 px-4">
-
-                <!-- Search -->
-                <form class="row g-3 d-flex justify-content-end">
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-success mb-3">Create order manually</button>
-                    </div>
-                </form>
 
                 <!-- Table -->
                 <div class="row d-flex justify-content-end">
@@ -97,10 +90,30 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>1</th>
+                                    <th>42</th>
                                     <td>
                                         <div><strong>Aina Aizsila</strong></div>
                                         <div>Atmodas street 56, Aizpute, LV-3456, Latvia</div>
+                                    </td>
+                                    <td>10</td>
+                                    <td>10.00 EUR</td>
+                                    <td>2.10 EUR</td>
+                                    <td>12.10 EUR</td>
+                                    <td>
+                                        <span class="badge bg-success">Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>43</th>
+                                    <td>
+                                        <div><strong>Olita Oga</strong></div>
+                                        <div>Ozolu street 1, Ogre, LV-5001, Latvia</div>
                                     </td>
                                     <td>10</td>
                                     <td>10.00 EUR</td>
@@ -117,10 +130,50 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>2</th>
+                                    <th>53</th>
                                     <td>
                                         <div><strong>Baiba Bite</strong></div>
                                         <div>Birzes street 25, Baldone, LV-2125, Latvia</div>
+                                    </td>
+                                    <td>12</td>
+                                    <td>12.00 EUR</td>
+                                    <td>2.52 EUR</td>
+                                    <td>14.52 EUR</td>
+                                    <td>
+                                        <span class="badge bg-success">Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>51</th>
+                                    <td>
+                                        <div><strong>Pauls Poga</strong></div>
+                                        <div>Pumpuru street 34, Priekule, LV-3434, Latvia</div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>20.00 EUR</td>
+                                    <td>4.20 EUR</td>
+                                    <td>24.20 EUR</td>
+                                    <td>
+                                        <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>52</th>
+                                    <td>
+                                        <div><strong>Linda Liepa</strong></div>
+                                        <div>Lejas street 1, Ludza, LV-5701, Latvia</div>
                                     </td>
                                     <td>11</td>
                                     <td>11.00 EUR</td>
@@ -137,7 +190,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>3</th>
+                                    <th>50</th>
                                     <td>
                                         <div><strong>Dainis Dambis</strong></div>
                                         <div>Dunduru street 14, Daugavpils, LV-5414, Latvia</div>
@@ -157,7 +210,47 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>4</th>
+                                    <th>45</th>
+                                    <td>
+                                        <div><strong>Gatis Gulbis</strong></div>
+                                        <div>Gaintnieku street 1, Gulbene, LV-4401, Latvia</div>
+                                    </td>
+                                    <td>20</td>
+                                    <td>20.00 EUR</td>
+                                    <td>4.20 EUR</td>
+                                    <td>24.20 EUR</td>
+                                    <td>
+                                        <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>44</th>
+                                    <td>
+                                        <div><strong>Silga Saule</strong></div>
+                                        <div>Skolas street 94, Sabile, LV-3294, Latvia</div>
+                                    </td>
+                                    <td>11</td>
+                                    <td>11.00 EUR</td>
+                                    <td>2.31 EUR</td>
+                                    <td>13.31 EUR</td>
+                                    <td>
+                                        <span class="badge bg-success">Completed</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>49</th>
                                     <td>
                                         <div><strong>Kristaps Kokle</strong></div>
                                         <div>Krasta street 13, Koknese, LV-5113, Latvia</div>
@@ -177,7 +270,27 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th>5</th>
+                                    <th>46</th>
+                                    <td>
+                                        <div><strong>Toms Treija</strong></div>
+                                        <div>Talsciema street 14, Talsi, LV-3201, Latvia</div>
+                                    </td>
+                                    <td>13</td>
+                                    <td>13.00 EUR</td>
+                                    <td>2.73 EUR</td>
+                                    <td>15.73 EUR</td>
+                                    <td>
+                                        <span class="badge bg-danger">Canceled</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>48</th>
                                     <td>
                                         <div><strong>Maija Magone</strong></div>
                                         <div>Mednieku street 1, Madona, LV-4801, Latvia</div>
@@ -188,6 +301,26 @@
                                     <td>24.20 EUR</td>
                                     <td>
                                         <span class="badge bg-warning">Pending</span>
+                                    </td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                            <button type="button" class="btn btn-outline-success">Edit</button>
+                                            <button type="button" class="btn btn-outline-success" onclick="deleteRow(this)">Delete</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>47</th>
+                                    <td>
+                                        <div><strong>Valdis Varde</strong></div>
+                                        <div>Valmieras street 1, Valka, LV-4701, Latvia</div>
+                                    </td>
+                                    <td>16</td>
+                                    <td>16.00 EUR</td>
+                                    <td>3.36 EUR</td>
+                                    <td>19.36 EUR</td>
+                                    <td>
+                                        <span class="badge bg-danger">Canceled</span>
                                     </td>
                                     <td>
                                         <div class="btn-group" role="group" aria-label="Basic outlined example">
